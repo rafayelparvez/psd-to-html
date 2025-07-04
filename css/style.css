@@ -1,185 +1,262 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} 
+/*common start*/
 
-body {
-  padding: 0;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  color: #626262;
+body{
+	margin: 0;
+	font-family: "Playfair Display", serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #626262;
 }
-/* Header CSS Start */ 
+/*common end*/
+/*header start*/
+header{
+	padding: 30px 0;
+	/*border-bottom: 1px solid red;*/
+}
+.container{
+	margin: 0 auto;
+	width: 90%;
+	/*border: 1px solid black;*/
+	overflow: hidden;
+}
+.logo{margin-top: 15px;
+	float: left;
+	width: 10%;
+	/*border: 1px solid red;*/
+}
+.logo a{}
+.logo a img{
+	width: 100%;
+}
+.menu{
+	float: right;
+	width: 65%;
+	/*border: 1px solid red;*/
+}
+.menu ul{
+	float: right;
+}
+.menu ul li{
+	list-style: none;
+	float: left;
+}
+.menu ul li a{
+	display: inline-block;
+	margin: 0 45px;
+	color: #626262;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+	transition: .33s;
+}
+.menu ul li:last-child a{
+	margin-right: 0;
+}
+.menu ul li:hover a{
+	border-bottom: 1px solid #626262;
 
-header, li, a {
-  text-decoration: none;
-  color: #626262;
-  text-transform: uppercase;
 }
-header {
-  display: flex;
-  align-items: center;
-  height: 90px;
-  padding: 30px 10%;
+
+/*header end*/
+/*banner start*/
+.banner{}
+.banner_img{}
+.banner_img img{
+	width: 100%;
 }
-.logo { 
-  cursor: pointer;
-  width:120px;
-  margin-right: auto;
+
+/*banner end*/
+/*getaway start*/
+.getaway{
+	padding: 100px 0 20px;
 }
-.menu {
-  list-style: none; 
+.container2{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 80%;
+	/*border: 1px solid red;*/
 }
-.menu ul {
-  display: flex;
-  justify-content: flex-end;
+.g_content{}
+.c_light{
+	margin: 0;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+
 }
-.menu li {
-  display: inline-block;
-  padding: 0 45px;
+.c_title{
+	margin: 15px 0 25px;
+	font-size: 30px;
+	font-weight: 400;
 }
-.menu li a{
-  font-size: 14px;
-  border-bottom: 3px solid transparent;
-  transition: .33s ease;
+.c_text{
+	margin: 0;
+	line-height: 24px;
 }
-.menu li a:hover {
-  border-bottom: 3px solid #626262;
+.g_link{
+	margin-top: 45px;
+	display: inline-block;
+	color: #626262;
+	text-decoration: none;
 }
-.menu li:last-child {
-  padding-right: 0;
+/*getaway end*/
+/*blog start*/
+.blog{
+	padding: 0 0 100px;
 }
-/* Header CSS End */ 
-/* Hero CSS Start*/
-.hero{
-  padding: 50px 10%;
+.sb_item{
+	margin-top: 80px;
+	float: left;
+	width: 47.3%;
+	/*border: 1px solid red;*/
 }
-.hero img {
-  width: 100%;
+.sb_item:nth-child(even){
+	margin-left: 5.4%;
+
 }
-/* Hero CSS End*/ 
-/* Sec1 CSS Start*/
-.sec1 {
-  padding: 80px 18% 80px;
+.sb_img img{
+	width: 100%;
+  margin-bottom: 50px;
 }
-.ubuntu{
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  font-style: normal;
-  text-transform: uppercase;
+/*blog end*/
+
+/*newsletter start*/
+.newsletter{
+	background-color: #f0f0f0;
+	padding: 70px 0;
+}
+.signup{
+	text-align: center;
+}
+.s_h1{
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 70px;
+}
+.s_form{
+	position: relative;
+	width: 400px;
+/*	border: 5px solid red;*/
+	margin: 0 auto;
+}
+.s_form input{
+	font-family: "Playfair Display", serif;
+	font-size: 14;
+	font-weight: 400;
+	color: #626262;
+	width: 345px;
+	height: 45px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	background-color: transparent;
+	padding-left: 5px;
+	padding-right: 45px;
+}
+.s_form input:focus{
+	outline: 0;
+}
+.s_form button{
+	position: absolute;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	top: 15px;
+	right: 0;
+}
+.s_form button:focus{
+	outline: 0;
+}
+.s_form button img{}
+/*newsletter end*/
+
+/*blog2 start*/
+.blog2{
+	padding-top: 20px;
+}
+.load{
+	padding: 100px 0 50px;
+	text-align: center;
+}
+.load button{
+	width: 160px;
+	height: 60px;
+	background-color: white;
+	border: 2px solid #626262;
+	font-family: "Playfair Display", serif;
+	font-size: 20px;
+	font-size: 400;
+	color: #626262;
+	cursor: pointer;
+	transition: .33s linear;
+}
+.load button:hover{
+	background-color: #626262;
+	color: white;
+}
+/*blog2 end*/
+
+
+/*footer start*/
+footer{
+	padding: 35px 0;
+	background-color: #f0f0f0;
+}
+.page{
+	float: left;
+	width: 40%;
+/*	border: 1px solid;*/
+}
+.page ul{
+
+}
+.page ul li{
+	list-style: none;
+	float: left;
+}
+.page ul li a{
+	display: inline-block;
+	margin: 0 10px;
   
-}
-.sec1p{
-  line-height: 24px;
-  margin-bottom: 50px;
-  font-weight: 400;
-  font-size: 14px;
-}
-.sec1title{
-  margin: 20px 0 30px;
-  font-size: 30px;
-  font-weight: 400;
-}
-/* Sec1 CSS End*/ 
-/* Sec2 CSS Start*/ 
-.sec2 {
-  padding: 80px 18%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 50px;
-}
-.blogcard {
-  width: 45%;
-}
-.imgbox img{
-  margin-bottom: 50px;
-  width: 100%;
-}
-/* Sec2 CSS End*/ 
-/* Newsletter CSS start*/ 
-.newsletter {
-  padding: 80px 0;
-  background-color: #F0F0F0;
-}
-.newscont {
-  text-align: center;
-}
-.newstitle {
-  color: #333333;
-  margin: 0 0 70px 0;
-}
-.newsform {
-  position: relative;
-  width: 400px;
-  margin: 0 auto;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: .33s;
 
 }
-.newsform input {
-  padding-right: 40px;
-  padding-left: 5px;
-  width: 380px;
-  height: 45px;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #333333;
+.page ul li:last-child a{
+	margin-right: 0;
 }
-.newsform input:focus{
-  outline: none;
+.page ul li:hover a{
+	border-bottom: 1px solid #626262;
 }
-.newsform button {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  background: transparent;
-  border: none;
 
+.social{
+	float: right;
+	width: 12%;
+/*	border: 1px solid;*/
 }
-/* Newsletter CSS end*/ 
-/* Blog CSS start*/
-.blogbtn {
-  margin: 0 auto;
-  padding: 15px 25px;
-  font-size: 20px;
-  background-color: #ffffff;
-  border: 1px solid #626262;
-  cursor: pointer;
-  transition: .33s ease;
+.social ul{}
+.social ul li{
+	list-style: none;
+	float: left;
 }
-.blogbtn:hover {
-  letter-spacing: 1px;
-}  
-/* Blog CSS End*/
-/* Footer CSS start*/
-footer {
-  height: 90px;
-  padding: 0 10%;
-  background-color: #F0F0F0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.social ul li span {
+    padding-right: 10px;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+   
 }
-.footermenu {
-  padding-right: 15px;
-  font-family: "Playfair Display", serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: none;
+.social ul li a{
+	display: inline-block;
+	margin: 0 3px;
+	color: #000000;
+	text-decoration: none;
 }
-.rightcont {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+
+
+.social ul li a: hover{
 }
-.sociallink {
-  margin-left: 10px;
-  cursor: pointer;
-}
-/* Footer CSS end*/
+
+/*footer end*/
